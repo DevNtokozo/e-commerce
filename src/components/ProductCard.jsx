@@ -6,7 +6,7 @@ export default function ProductCard({ product }) {
                             <img src={product.image} alt={product.name} />
                             <div className="product-card-content">
                                 <h3 className="product-card-name">{product.name}</h3>                                
-                                <p className="product-card-price">${product.price.toFixed(2)}</p>
+                                <p className="product-card-price">R{product.price.toFixed(2)}</p>
                             </div>
                             <div className="product-card-actions">
                                 <Link className="btn btn-secondary">View Details</Link>

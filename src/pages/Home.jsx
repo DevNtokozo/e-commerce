@@ -9,7 +9,7 @@ export default function Home() {
             <div className="home-hero">
                 <h1 className="home-title">Welcome to ShopMate</h1>
                 <p className="home-subtitle">
-                    Your hello one-stop shop for all your needs.
+                    Your one-stop shop for all your needs.
                 </p>
             </div>
             <div className="container">

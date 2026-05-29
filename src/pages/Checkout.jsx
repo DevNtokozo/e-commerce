@@ -33,7 +33,7 @@ export default function Checkout() {
                 <div className="checkout-item-details">
                   <h3 className="checkout-item-name">{item.product.name}</h3>
                   <p className="checkout-item-price">
-                    ${item.product.price} each
+                    R{item.product.price} each
                   </p>
                 </div>
                 <div className="checkout-item-controls">
@@ -54,7 +54,7 @@ export default function Checkout() {
                   </div>
 
                   <p className="checkout-item-total">
-                    ${(item.product.price * item.quantity).toFixed(2)}
+                    R{(item.product.price * item.quantity).toFixed(2)}
                   </p>
                   <button
                     className="btn btn-secondary btn-small"
@@ -71,12 +71,12 @@ export default function Checkout() {
             <h2 className="checkout-section-title">Total</h2>
             <div className="checkout-total">
               <p className="checkout-total-label">Subtotal:</p>
-              <p className="checkout-total-value">${total.toFixed(2)}</p>
+              <p className="checkout-total-value">R{total.toFixed(2)}</p>
             </div>
             <div className="checkout-total">
               <p className="checkout-total-label">Total:</p>
               <p className="checkout-total-value checkout-total-final">
-                ${total.toFixed(2)}
+                R{total.toFixed(2)}
               </p>
             </div>
             <button
